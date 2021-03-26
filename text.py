@@ -21,6 +21,7 @@ def countword()-> int:
     count=1
     fhand=open('text.txt')
     word=fhand.readline()
+    word=word.lower()
     for line in fhand:   #זה רץ על שורות
         WordsInLine=line.split() 
         num=len(WordsInLine)
